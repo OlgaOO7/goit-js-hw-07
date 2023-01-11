@@ -81,14 +81,12 @@ function onClickGalleryImage(evt) {
       },
     });
   
+    function onEscape(event) {    
+      if (event.code !== 'Escape') {
+        return;    
+      }    
+      instance.close();
+    };
+
   instance.show();
 };
-
-
-  function onEscape(event) {    
-    if (event.code !== 'Escape') {
-      return;    
-    }    
-    instance.close();
-  };
-
