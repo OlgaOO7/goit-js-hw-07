@@ -43,15 +43,10 @@ function onClickGalleryImage(evt) {
 
   if (evt.target.nodeName !== 'IMG') {
     return;
-  };
-  const lightbox = new SimpleLightbox('.gallery a', { 
-    captionsData: 'alt',
-    captionDelay: 250,
-  });  
+  }; 
 }
 
-
-// const lightbox = new SimpleLightbox('.gallery a', { 
-//   captionsData: 'alt',
-//   captionDelay: 250,
-// });
+const lightbox = new SimpleLightbox('.gallery a', { 
+  captionsData: 'alt',
+  captionDelay: 250,
+});
